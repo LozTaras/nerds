@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Дизайн-студия Nerds</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="style/normalize.css"></link>
     <link rel="stylesheet" href="style/style.css"></link>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header container">
       <nav class="main-navigation">
         <a class="main-header-logo" href="#">
           <img src="img/logo.svg" alt="Логотип Nerds" width="160" height="65">
@@ -24,80 +24,84 @@
         </div>
       </nav>
     </header>
-    <main class="container">
+    <main>
 
       <h1 class="visually-hidden">Nerds дизайн-студия из Краснодара!</h1>
 
-      <div class="index-column slider">
-        <section class="feachures">
-          <h2 class="visually-hidden">Преимущества</h2>
-          <ul class="feachures-slider">
-            <li class="feachures-item">
-              <p class="feachures-item-slogan"><b>Долго, дорого, скрупулезно.</b></p>
-              <p class="feachures-item-desc">
-                Математически выверенный дизайн
-                для вашего сайта или мобильного приложения.
-              </p>
-              <a class="button feachures-learn-more" href="#">УЗНАТЬ БОЛЬШЕ</a>
+      <div class="slider-container">
+        <div class="slider">
+          <section class="feachures">
+            <h2 class="visually-hidden">Преимущества</h2>
+            <ul class="feachures-slider">
+              <li class="feachures-item">
+                <p class="feachures-item-slogan"><b>Долго, дорого, скрупулезно.</b></p>
+                <p class="feachures-item-desc">
+                  Математически выверенный дизайн
+                  для вашего сайта или мобильного приложения.
+                </p>
+                <a class="button feachures-learn-more" href="#">УЗНАТЬ БОЛЬШЕ</a>
+              </li>
+              <li class="feachures-item visually-hidden">
+                <p class="feachures-item-item-logan"><b>
+                  Любим математику как никто другой
+                </b></p>
+                <p class="feachures-item-desc">
+                  Никакого креатива, только математические формулы
+                  для расчета идеальных пропорций.
+                </p>
+                <a class="button feachures-item-learn-more" href="#">УЗНАТЬ БОЛЬШЕ</a>
+              </li>
+              <li class="feachures-item visually-hidden">
+                <p class="feachures-item-slogan"><b>Только ночь, только хардкор</b></p>
+                <p class="feachures-item-desc">
+                  Работать днем, как все? Мы против этого.
+                  Ближе к полуночи работа только начинается.
+                </p>
+                <a class="button feachures-item-learn-more" href="#">УЗНАТЬ БОЛЬШЕ</a>
+              </li>
+            </ul>
+          </section>
+
+          <ul class="slider-swicher">
+            <li class="slider-radio">
+              <button class="slider-btn">Первый cлайд</button>
             </li>
-            <li class="feachures-item visually-hidden">
-              <p class="feachures-item-item-logan"><b>
-                Любим математику как никто другой
-              </b></p>
-              <p class="feachures-item-desc">
-                Никакого креатива, только математические формулы
-                для расчета идеальных пропорций.
-              </p>
-              <a class="button feachures-item-learn-more" href="#">УЗНАТЬ БОЛЬШЕ</a>
+            <li class="slider-radio">
+              <button class="slider-btn">Второй слайд</button>
             </li>
-            <li class="feachures-item visually-hidden">
-              <p class="feachures-item-slogan"><b>Только ночь, только хардкор</b></p>
-              <p class="feachures-item-desc">
-                Работать днем, как все? Мы против этого.
-                Ближе к полуночи работа только начинается.
-              </p>
-              <a class="button feachures-item-learn-more" href="#">УЗНАТЬ БОЛЬШЕ</a>
+            <li class="slider-radio">
+              <button class="slider-btn">Третий слайд</button>
             </li>
           </ul>
-        </section>
+        </div>
+      </div>
 
-        <ul class="slider-swicher">
-          <li class="slider-radio">
-            <button class="slider-btn">Первый cлайд</button>
+      <section class="container">
+        <h2 class="visually-hidden">Продукты</h2>
+        <ul class="main-products ">
+          <li class="main-products-item">
+            <h2>Веб-сайты</h2>
+            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <a class="button" href="#">ЗАКАЗАТЬ</a>
           </li>
-          <li class="slider-radio">
-            <button class="slider-btn">Второй слайд</button>
+          <li class="main-products-item">
+            <h2>Приложения</h2>
+            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a class="button " href="#">ЗАКАЗАТЬ</a>
           </li>
-          <li class="slider-radio">
-            <button class="slider-btn">Третий слайд</button>
+          <li class="main-products-item">
+            <h2>Презентации</h2>
+            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a class="button" href="#">ЗАКАЗАТЬ</a>
           </li>
         </ul>
+      </section>
+
+      <div class="container">
+        <hr class="cross-line">
       </div>
 
-      <div class="index-column">
-        <section class="main-products">
-          <h2 class="visually-hidden">Продукты</h2>
-          <ul>
-            <li class="main-products-item">
-              <h2>Веб-сайты</h2>
-              <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-              <a class="button" href="#">ЗАКАЗАТЬ</a>
-            </li>
-            <li class="main-products-item">
-              <h2>Приложения</h2>
-              <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-              <a class="button " href="#">ЗАКАЗАТЬ</a>
-            </li>
-            <li class="main-products-item">
-              <h2>Презентации</h2>
-              <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-              <a class="button" href="#">ЗАКАЗАТЬ</a>
-            </li>
-          </ul>
-        </section>
-      </div>
-
-      <div class="index-column">
+      <div class="index-column container">
         <section class="about-us">
           <h2 class="visually-hidden">Про нас!</h2>
           <p class="about-us-slogan"><b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b></p>
@@ -133,7 +137,11 @@
         </section>
       </div>
 
-      <div class="index-column">
+      <div class="container">
+        <hr class="cross-line wo-margin">
+      </div>
+
+      <div class="index-column-logos container">
         <section class="brands-logo">
           <h2 class="visually-hidden">Логотипы брендов</h2>
           <ul>
@@ -144,30 +152,39 @@
           </ul>
         </section>
       </div>
+
+      <div class="container">
+        <hr class="cross-line">
+      </div>
+
     </main>
     <footer class="page-footer">
       <section class="page-footer-contacts">
-        <h2 class="page-footer-contacts-title">NЁRDS DESIGN STUDIO</h2>
-        <img class="map-adress" src="img/map-marker.png" alt="Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="1440" height="416">
-        <p class="contacts-info">
-          191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-          тел. +7 (812) 275-75-75
-        </p>
-        <a href="#" class="button contacts-write-to-us">Напишите нам</a>
+        <img src="img\map-marker.png" alt="Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+        <div class="contact-wrapper">
+          <h2 class="page-footer-contacts-title">NЁRDS DESIGN STUDIO</h2>
+          <p class="contacts-info">
+            191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+            тел. +7 (812) 275-75-75
+          </p>
+          <a href="#" class="button contacts-write-to-us">Напишите нам</a>
+        </div>
       </section>
 
-      <div class="page-footer-social">
-        <ul class="page-footer-social-icons">
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
-        </ul>
-      </div>
+      <div class="index-column-logos container footer-social">
+        <div class="page-footer-social">
+          <ul class="page-footer-social-icons">
+            <li><a class="social-button" href="#">Вконтакте</a></li>
+            <li><a class="social-button" href="#">Фейсбук</a></li>
+            <li><a class="social-button" href="#">Инстаграм</a></li>
+          </ul>
+        </div>
 
-      <aside class="page-footer-offer">
-        <b class="page-footer-slogan">Давайте дружить, это выгодно!</b>
-        <p class="page-footer-offer">Скидка 10% для друзей из социальных сетей.</p>
-      </aside>
+        <aside class="page-footer-offer">
+          <b class="page-footer-slogan">Давайте дружить, это выгодно!</b>
+          <p class="page-footer-offer">Скидка 10% для друзей из социальных сетей.</p>
+        </aside>
+      </div>
 
     </footer>
     <secction class="modal-contact-us">
