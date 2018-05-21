@@ -46,16 +46,19 @@
               <fieldset class="grid-filter">
                 <legend>Сетка:</legend>
                 <ul>
-                  <li class="grid-checked" tabindex="0">
-                    <input class="visually-hidden" id="adaptive-grid" tabindex="-1" type="radio" name="grid" value="adaptive" checked>
+                  <li>
+                    <input class="radio-btn visually-hidden" id="adaptive-grid" type="radio" name="grid" value="adaptive" checked>
+                    <span class="radio-indicator"></span>
                     <label for="adaptive-grid">Адаптивная</label>
                   </li>
-                  <li tabindex="0">
-                    <input class="visually-hidden" id="fixed-grid" tabindex="-1" type="radio" name="grid" value="fixed">
+                  <li>
+                    <input class="radio-btn visually-hidden" id="fixed-grid" type="radio" name="grid" value="fixed">
+                    <span class="radio-indicator"></span>
                     <label for="fixed-grid">Фиксированная</label>
                   </li>
-                  <li tabindex="0">
-                    <input class="visually-hidden" id="responsive-grid" tabindex="-1" type="radio" name="grid" value="responsive">
+                  <li>
+                    <input class="radio-btn visually-hidden" id="responsive-grid" type="radio" name="grid" value="responsive">
+                    <span class="radio-indicator"></span>
                     <label for="responsive-grid">Резиновая</label>
                   </li>
                 </ul>
@@ -63,24 +66,29 @@
               <fieldset class="feachures-filter">
                 <legend>ОСОБЕННОСТИ:</legend>
                 <ul>
-                  <li class="feachures-checked" tabindex="0">
-                    <input class="visually-hidden" id="feachures-slider" tabindex="-1" type="checkbox" name="feature-1" value="slider" checked>
+                  <li>
+                    <input class="checkbox-btn visually-hidden" id="feachures-slider" type="checkbox" name="feature-1" value="slider" checked>
+                    <span class="checkbox-indicator"></span>
                     <label for="feachures-slider">Слайдер</label>
                   </li>
-                  <li tabindex="0">
-                    <input class="visually-hidden" id="feachures-advantage" tabindex="-1" type="checkbox" name="feature-2" value="advantage">
+                  <li>
+                    <input class="checkbox-btn visually-hidden" id="feachures-advantage" type="checkbox" name="feature-2" value="advantage">
+                    <span class="checkbox-indicator"></span>
                     <label for="feachures-advantage">Блок преимуществ</label>
                   </li>
-                  <li class="feachures-checked" tabindex="0">
-                    <input class="visually-hidden" id="feachures-news" tabindex="-1" type="checkbox" name="feature-3" value="news" checked>
+                  <li class="feachures-checked">
+                    <input class="checkbox-btn visually-hidden" id="feachures-news" type="checkbox" name="feature-3" value="news" checked>
+                    <span class="checkbox-indicator"></span>
                     <label for="feachures-news">Новости</label><br>
                   </li>
-                  <li tabindex="0">
-                    <input class="visually-hidden" id="feachures-gallery" tabindex="-1" type="checkbox" name="feature-4" value="gallery">
+                  <li>
+                    <input class="checkbox-btn visually-hidden" id="feachures-gallery" type="checkbox" name="feature-4" value="gallery">
+                    <span class="checkbox-indicator"></span>
                     <label for="feachures-gallery">Галерея</label>
                   </li>
-                  <li tabindex="0">
-                    <input class="visually-hidden" id="feachures-basked" tabindex="-1" type="checkbox" name="feature-5" value="basked">
+                  <li>
+                    <input class="checkbox-btn visually-hidden" id="feachures-basked" type="checkbox" name="feature-5" value="basked">
+                    <span class="checkbox-indicator"></span>
                     <label for="feachures-basked">Корзина</label>
                   </p>
                 </ul>
@@ -180,28 +188,6 @@
           </p>
           <a href="#" class="button contacts-write-to-us">Напишите нам</a>
         </div>
-
-        <secction class="modal-contact-us">
-          <h2>Напишите нам</h2>
-          <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-            <p class="modal-form-name">
-              <label for="login-form-name">Ваше имя:</label><br>
-              <input class="login-form-field" id="login-form-name" type="text" name="name" placeholder="Имя Фамилия">
-            </p>
-            <p class="modal-form-emain">
-              <label for="login-form-email">Ваш e-mail:</label><br>
-              <input class="login-form-field" id="login-form-email" type="text" name="email" placeholder="email@example.com">
-            </p>
-            <p class="modal-form-text">
-            <label for="login-form-text">Текст письма:</label><br>
-            <textarea class="login-form-field textarea-field" name="text" id="login-form-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-            </p>
-            <button class="button submit-btn" type="submit">Отправить</button>
-          </form>
-          <button class="contact-us-close">
-            <span class="visually-hidden">Закрыть форму</span>
-          </button>
-        </secction>
       </section>
 
       <div class="footer-social container">
@@ -244,7 +230,28 @@
           <p class="page-footer-discount">Скидка 10% для друзей из социальных сетей.</p>
         </aside>
       </div>
-
     </footer>
+
+    <secction class="modal-contact-us">
+      <h2>Напишите нам</h2>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="modal-form-name">
+          <label for="login-form-name">Ваше имя:</label><br>
+          <input class="login-form-field" id="login-form-name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p class="modal-form-emain">
+          <label for="login-form-email">Ваш e-mail:</label><br>
+          <input class="login-form-field" id="login-form-email" type="text" name="email" placeholder="email@example.com">
+        </p>
+        <p class="modal-form-text">
+        <label for="login-form-text">Текст письма:</label><br>
+        <textarea class="login-form-field textarea-field" name="text" id="login-form-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="button submit-btn" type="submit">Отправить</button>
+      </form>
+      <button class="contact-us-close">
+        <span class="visually-hidden">Закрыть форму</span>
+      </button>
+    </secction>
   </body>
 </html>
