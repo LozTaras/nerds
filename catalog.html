@@ -16,7 +16,7 @@
         <ul class="site-navigation">
           <li><a href="#">Студия</a></li>
           <li><a href="#">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
+          <li><a class="current-active" href="#" tabindex="-1">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
         <div class="basket">
@@ -25,8 +25,9 @@
       </nav>
     </header>
     <main>
-
-      <h1 class="catalog-title container">Магазин готовых шаблонов</h1>
+      <div class="background-color">
+        <h1 class="catalog-title container">Магазин готовых шаблонов</h1>
+      </div>
 
       <div class="container catalog-main-grid">
         <secction class="filters">
@@ -36,17 +37,17 @@
                 <legend>СТОИМОСТЬ:</legend>
                 <div class="price-slider"></div>
                 <p>
-                  <label class="price-decr" for="min-value">OT:</label>
-                  <input id="min-value" type="text" name="min-value">
-                  <label class="price-decr" for="max-value">ДО:</label>
-                  <input id="max-value" type="text" name="max-value">
+                  <label class="price-decr" for="min-value">OT</label>
+                  <input id="min-value" type="text" name="min-value"  value="0">
+                  <label class="price-decr" for="max-value">ДО</label>
+                  <input id="max-value" type="text" name="max-value" value="15 000">
                 </p>
               </fieldset>
               <fieldset class="grid-filter">
                 <legend>Сетка:</legend>
                 <ul>
-                  <li tabindex="0">
-                    <input class="visually-hidden" id="adaptive-grid" tabindex="-1" type="radio" name="grid" value="adaptive">
+                  <li class="grid-checked" tabindex="0">
+                    <input class="visually-hidden" id="adaptive-grid" tabindex="-1" type="radio" name="grid" value="adaptive" checked>
                     <label for="adaptive-grid">Адаптивная</label>
                   </li>
                   <li tabindex="0">
@@ -62,17 +63,17 @@
               <fieldset class="feachures-filter">
                 <legend>ОСОБЕННОСТИ:</legend>
                 <ul>
-                  <li tabindex="0">
-                    <input class="visually-hidden" id="feachures-slider" tabindex="-1" type="checkbox" name="feature-1" value="slider">
+                  <li class="feachures-checked" tabindex="0">
+                    <input class="visually-hidden" id="feachures-slider" tabindex="-1" type="checkbox" name="feature-1" value="slider" checked>
                     <label for="feachures-slider">Слайдер</label>
                   </li>
                   <li tabindex="0">
                     <input class="visually-hidden" id="feachures-advantage" tabindex="-1" type="checkbox" name="feature-2" value="advantage">
                     <label for="feachures-advantage">Блок преимуществ</label>
                   </li>
-                  <li tabindex="0">
-                    <input class="visually-hidden" id="feachures-news" tabindex="-1" type="checkbox" name="feature-3" value="news">
-                    <label for="feachures-news">Новости</label>
+                  <li class="feachures-checked" tabindex="0">
+                    <input class="visually-hidden" id="feachures-news" tabindex="-1" type="checkbox" name="feature-3" value="news" checked>
+                    <label for="feachures-news">Новости</label><br>
                   </li>
                   <li tabindex="0">
                     <input class="visually-hidden" id="feachures-gallery" tabindex="-1" type="checkbox" name="feature-4" value="gallery">
@@ -90,8 +91,8 @@
 
         <div class="catalog">
           <div class="catalog-sort">
-            <b class="catalog-sort-sort">СОРТИРОВАТЬ:</b>
-            <ul>
+            <b class="catalog-sort-title">СОРТИРОВАТЬ:</b>
+            <ul class="sort-types">
               <li class="catalog-sort-price current-filter">
                 <a href="#">По цене</a>
               </li>
@@ -104,14 +105,14 @@
             </ul>
           </div>
 
-          <section class="catalog">
+          <section>
             <h2 class="visually-hidden">Каталог товаров</h2>
             <ul class="catalog-list">
               <li class="catalog-item">
                 <img src="img/img-sedona.jpg" alt="Sedona preview" width="360" height="576">
                 <div class="item-info">
                   <h3>Sedona</h3>
-                  <p>Информационный сайт для туристов</p>
+                  <p>Информационный сайт<br> для туристов</p>
                   <a class="button buy-bth" href="#">9 900 руб.</a>
                 </div>
               </li>
@@ -119,7 +120,7 @@
                 <img src="img/img-pink.jpg" alt="Pink preview" width="360" height="576">
                 <div class="item-info">
                   <h3>Pink App</h3>
-                  <p>Продуктовый лендинг приложения для iOS и Android</p>
+                  <p>Продуктовый лендинг<br> приложения для iOS и Android</p>
                   <a class="button buy-bth" href="#">9 900 руб.</a>
                 </div>
               </li>
@@ -127,7 +128,7 @@
                   <img src="img/img-barbershop.jpg" alt="Borodinski preview" width="360" height="576">
                   <div class="item-info">
                     <h3>Barbershop</h3>
-                    <p>Сайт салоны красоты. Для мужчин, да.</p>
+                    <p>Сайт салоны красоты.<br> Для мужчин, да.</p>
                     <a class="button buy-bth" href="#">9 900 руб.</a>
                   </div>
               </li>
@@ -135,7 +136,7 @@
                 <img src="img/img-mishka.jpg" alt="Mishka preview" width="360" height="576">
                 <div class="item-info">
                   <h3>MISHKA</h3>
-                  <p>Интернет-магазин вязаных игрушек</p>
+                  <p>Интернет-магазин<br> вязаных игрушек</p>
                   <a class="button buy-bth" href="#">9 900 руб.</a>
                 </div>
               </li>
@@ -143,7 +144,7 @@
                 <img src="img/img-aplus.jpg" alt="A+ preview" width="360" height="576">
                 <div class="item-info">
                   <h3>A Plus</h3>
-                  <p>Лендинг курсов повышения квалификации</p>
+                  <p>Лендинг курсов повышения<br> квалификации</p>
                   <a class="button buy-bth" href="#">9 900 руб.</a>
                 </div>
               </li>
@@ -151,7 +152,7 @@
                 <img src="img/img-kvast.jpg" alt="Kvast preview" width="360" height="576">
                 <div class="item-info">
                   <h3>КВАСТ</h3>
-                  <p>Промо-сайт производителя крафтового кваса</p>
+                  <p>Промо-сайт производителя<br> крафтового кваса</p>
                   <a class="button buy-bth" href="#">9 900 руб.</a>
                 </div>
               </li>
