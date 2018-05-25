@@ -161,14 +161,17 @@
     </main>
     <footer class="page-footer">
       <section class="page-footer-contacts">
+        <div id="map"></div>
+        <div class="contact-container">
         <img src="img\map-marker.png" alt="Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
         <div class="contact-wrapper">
-          <h2 class="page-footer-contacts-title">NЁRDS DESIGN STUDIO</h2>
-          <p class="contacts-info">
-            191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8<br>
-            <span class="contacts-info-tel">тел. +7 (812) 275-75-75</span>
-          </p>
-          <a href="#" class="button contacts-write-to-us">Напишите нам</a>
+            <h2 class="page-footer-contacts-title">NЁRDS DESIGN STUDIO</h2>
+            <p class="contacts-info">
+              191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8<br>
+              <span class="contacts-info-tel">тел. +7 (812) 275-75-75</span>
+            </p>
+            <a href="#" class="button contacts-write-to-us">Напишите нам</a>
+          </div>
         </div>
       </section>
 
@@ -214,26 +217,30 @@
       </div>
     </footer>
 
-    <secction class="modal-contact-us">
-      <h2>Напишите нам</h2>
-      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="modal-form-name">
-          <label for="login-form-name">Ваше имя:</label><br>
-          <input class="login-form-field" id="login-form-name" type="text" name="name" placeholder="Имя Фамилия">
-        </p>
-        <p class="modal-form-emain">
-          <label for="login-form-email">Ваш e-mail:</label><br>
-          <input class="login-form-field" id="login-form-email" type="text" name="email" placeholder="email@example.com">
-        </p>
-        <p class="modal-form-text">
-        <label for="login-form-text">Текст письма:</label><br>
-        <textarea class="login-form-field textarea-field" name="text" id="login-form-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-        </p>
-        <button class="button submit-btn" type="submit">Отправить</button>
-      </form>
-      <button class="contact-us-close">
-        <span class="visually-hidden">Закрыть форму</span>
-      </button>
+    <secction class="modal modal-window">
+        <h2>Напишите нам</h2>
+        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="modal-form-name">
+            <label for="login-form-name">Ваше имя:</label><br>
+            <input class="login-form-field" id="login-form-name" type="text" name="name" placeholder="Имя Фамилия">
+          </p>
+          <p class="modal-form-emain">
+            <label for="login-form-email">Ваш e-mail:</label><br>
+            <input class="login-form-field" id="login-form-email" type="text" name="email" placeholder="email@example.com">
+          </p>
+          <p class="modal-form-text">
+          <label for="login-form-text">Текст письма:</label><br>
+          <textarea class="login-form-field textarea-field" name="text" id="login-form-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+          </p>
+          <button class="button submit-btn" type="submit">Отправить</button>
+        </form>
+        <button class="modal-close">
+          <span class="visually-hidden">Закрыть форму</span>
+        </button>
     </secction>
+
+    <script src="js/script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIavM8TP-dZWpNvP3BzXhybJY4mBHBT7w&callback=initMap">
+		</script>
   </body>
 </html>
