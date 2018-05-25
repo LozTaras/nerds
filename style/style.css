@@ -1047,24 +1047,23 @@ a {
   padding-right: 29px;
 }
 
-.checkbox-btn + .checkbox-indicator {
+.checkbox-btn + .checkbox-indicator::before {
   content: url('../img/checkbox-off.svg');
 
   position: absolute;
   top: 0px;
   left: 2px;
+  z-index: 5;
 
   opacity: 0.4;
 }
 
-.checkbox-btn:checked + .checkbox-indicator {
+.checkbox-btn:checked + .checkbox-indicator::before {
   content: url('../img/checkbox-on.svg');
-
-  opacity: 0.4;
 }
 
-.feachures-filter li:hover .checkbox-indicator,
-.feachures-filter .checkbox-btn:focus + .checkbox-indicator {
+.feachures-filter li:hover .checkbox-indicator::before,
+.feachures-filter .checkbox-btn:focus + .checkbox-indicator::before {
   opacity: 1;
 }
 
