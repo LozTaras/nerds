@@ -1,3 +1,5 @@
+/*Popup*/
+
 (function() {
   var openPopupBtn = document.body.querySelector('.contacts-write-to-us');
   var closePopupBtn = document.body.querySelector('.modal-close');
@@ -10,12 +12,10 @@
     loginFormField.focus();
   });
 
-
   closePopupBtn.addEventListener('click', function closePopup(evt) {
     evt.preventDefault();
     popup.classList.remove('modal-show');
   });
-
 
   window.addEventListener('keydown', function closePopup(evt) {
     if(evt.keyCode === 27) {
@@ -24,6 +24,8 @@
     }
   });
 })();
+
+/*Google maps*/
 
 function initMap() {
   var elem = document.body.querySelector('#map');

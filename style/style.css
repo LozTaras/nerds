@@ -138,6 +138,8 @@ a {
 
 .feachures-item {
   position: absolute;
+
+  transition: all 1s;
 }
 
 .feachures-slider {
@@ -148,7 +150,7 @@ a {
 
 .feachures-slider-1 {
   padding-right: 780px;
-  z-index: 5;
+  opacity: 0;
 }
 
 .feachures-slider-1::after {
@@ -160,8 +162,8 @@ a {
 }
 
 .feachures-slider-2 {
-  padding-right: 640px;
-  z-index: -1;
+  padding-right: 638px;
+  opacity: 0;
 }
 
 .feachures-slider-2::after {
@@ -173,8 +175,8 @@ a {
 }
 
 .feachures-slider-3 {
-  padding-right: 748px;
-  z-index: -1;
+  padding-right: 740px;
+  opacity: 0;
 }
 
 .feachures-slider-3::after {
@@ -183,6 +185,10 @@ a {
   position: absolute;
   left: 401px;
   top: -59px;
+}
+
+.feachures-item.active-feachures-item {
+  opacity: 1;
 }
 
 .feachures-item-slogan {
