@@ -1,7 +1,7 @@
 /*Filters*/
 
 (function() {
-  li = document.body.querySelectorAll('.feachures-filter li');
+  li = document.body.querySelectorAll('.filter-form li');
 
   function toggleCheckbox() {
     var input = this.querySelector('input');
@@ -15,6 +15,7 @@
       }
       input.checked = true;
     }
+    
   }
 
   for(var i = 0 ; i < li.length; i++) {

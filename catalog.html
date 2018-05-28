@@ -35,7 +35,13 @@
             <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
               <fieldset class="cost-filter">
                 <legend>СТОИМОСТЬ:</legend>
-                <div class="price-slider"></div>
+                <div class="range-control">
+                  <div class="scale">
+                    <div class="bar"></div>
+                    <div class="toggle toggle-min content-box-component"></div>
+                    <div class="toggle toggle-max content-box-component"></div>
+                  </div>
+                </div>
                 <p>
                   <label class="price-decr" for="min-value">OT</label>
                   <input id="min-value" type="text" name="min-value"  value="0">

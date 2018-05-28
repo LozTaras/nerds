@@ -940,12 +940,54 @@ a {
   width: 260px;
 }
 
-.price-slider {
+.range-control {
+  position: relative;
+
   height: 80px;
   margin-top: 48px;
+  padding-top: 39px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   background-color: #eeeeee;
   border-radius: 6px;
+}
+
+.range-control .scale {
+  height: 2px;
+
+  background-color: #d7dcde;
+}
+
+.range-control .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+
+  height: 4px;
+  width: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  box-shadow: 0 2px 1px #cfcfcf;
+  background-color: #ababab;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-control .toggle-min {
+  left: 18px;
+}
+
+.range-control .toggle-max {
+  left: 160px;
+}
+
+.range-control .bar {
+  width: 70%;
+  height: 2px;
+
+  background-color: #00ca74;
 }
 
 .cost-filter {
