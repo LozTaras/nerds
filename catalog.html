@@ -44,9 +44,9 @@
                 </div>
                 <p>
                   <label class="price-decr" for="min-value">OT</label>
-                  <input id="min-value" type="text" name="min-value"  value="0">
+                  <input id="min-value" type="number" name="min-value" value="0" readonly>
                   <label class="price-decr" for="max-value">ДО</label>
-                  <input id="max-value" type="text" name="max-value" value="15 000">
+                  <input id="max-value" type="number" name="max-value" value="15000" readonly>
                 </p>
               </fieldset>
               <fieldset class="grid-filter">
@@ -265,7 +265,7 @@
 
     <script src="js/script.js"></script>
     <script src="js/catalog.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIavM8TP-dZWpNvP3BzXhybJY4mBHBT7w&callback=initMap">
-		</script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIavM8TP-dZWpNvP3BzXhybJY4mBHBT7w&callback=initMap"></script>
+    <script src="js/rangeControl.js"></script>
   </body>
 </html>
