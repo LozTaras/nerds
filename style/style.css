@@ -51,6 +51,10 @@ a {
   border-radius: 4px;
 }
 
+.button:hover {
+  background-color: #e74246 !important;
+}
+
 .background-color {
   width: 100%;
 
@@ -200,9 +204,14 @@ a {
 
 .feachures-item-desc {
   margin-top: 26px;
+  margin-bottom: 270px;
 }
 
 .feachures-learn-more {
+  position: absolute;
+  top: 262px;
+  left: 20px;
+
   padding: 16px 53px;
   margin-top: 40px;
   margin-bottom: 80px;
@@ -751,25 +760,50 @@ a {
   display: none;
 }
 
-@keyframes bounce {
+@-webkit-keyframes bounce {
   0% {
-    transform: translateY(2000px);
+    -webkit-transform: translateY(2000px);
+            transform: translateY(2000px);
   }
   70% {
-    transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
   }
   90% {
-    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
   }
   100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(2000px);
+            transform: translateY(2000px);
+  }
+  70% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  90% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
 .modal-show {
   display: block;
-  animation-name: bounce;
-  animation-duration: .8s;
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: .8s;
+          animation-duration: .8s;
 }
 
 .modal-window {
@@ -857,6 +891,24 @@ a {
   border-radius: 2px;
 }
 
+.login-form-field::-webkit-input-placeholder {
+  color: #d7dcde;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.login-form-field:-ms-input-placeholder {
+  color: #d7dcde;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.login-form-field::-ms-input-placeholder {
+  color: #d7dcde;
+  font-size: 16px;
+  line-height: 18px;
+}
+
 .login-form-field::placeholder {
   color: #d7dcde;
   font-size: 16px;
@@ -867,6 +919,18 @@ a {
   border: 1px solid #b4b9bb;
 }
 
+.login-form-field:hover::-webkit-input-placeholder {
+  color: #b4b9bb;
+}
+
+.login-form-field:hover:-ms-input-placeholder {
+  color: #b4b9bb;
+}
+
+.login-form-field:hover::-ms-input-placeholder {
+  color: #b4b9bb;
+}
+
 .login-form-field:hover::placeholder {
   color: #b4b9bb;
 }
@@ -874,6 +938,18 @@ a {
 .login-form-field:focus {
   border-color: black;
   outline: 0;
+}
+
+.login-form-field:focus::-webkit-input-placeholder {
+  color: #444444;
+}
+
+.login-form-field:focus:-ms-input-placeholder {
+  color: #444444;
+}
+
+.login-form-field:focus::-ms-input-placeholder {
+  color: #444444;
 }
 
 .login-form-field:focus::placeholder {
