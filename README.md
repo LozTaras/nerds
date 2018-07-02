@@ -5,4 +5,6 @@
  - CSS
  - JavaScript
  
-Силка на хостинг: 
+Силка на хостинг: https://loztaras.github.io/nerds/
+
+Макет находится в репозитории.
