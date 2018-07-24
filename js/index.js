@@ -9,10 +9,6 @@
   var feachuresSlider2 = document.body.querySelector('.feachures-slider-2');
   var feachuresSlider3 = document.body.querySelector('.feachures-slider-3');
 
-  var feachuresLearnMore1 = document.body.querySelector('.feachures-learn-more-1');
-  var feachuresLearnMore2 = document.body.querySelector('.feachures-learn-more-2');
-  var feachuresLearnMore3 = document.body.querySelector('.feachures-learn-more-3');
-
   var fuchArray = [clickButton1, clickButton2, clickButton3];
   var i = 1;
 
@@ -29,10 +25,6 @@
     sliderBtn1.classList.add('active-slider-btn');
     sliderBtn2.classList.remove('active-slider-btn');
     sliderBtn3.classList.remove('active-slider-btn');
-
-    feachuresLearnMore1.setAttribute('tabindex', '0');
-    feachuresLearnMore2.setAttribute('tabindex', '-1');
-    feachuresLearnMore3.setAttribute('tabindex', '-1');
   }
 
   function clickButton2() {
@@ -43,10 +35,6 @@
     sliderBtn1.classList.remove('active-slider-btn');
     sliderBtn2.classList.add('active-slider-btn');
     sliderBtn3.classList.remove('active-slider-btn');
-
-    feachuresLearnMore1.setAttribute('tabindex', '-1');
-    feachuresLearnMore2.setAttribute('tabindex', '0');
-    feachuresLearnMore3.setAttribute('tabindex', '-1');
   }
 
   function clickButton3() {
@@ -57,10 +45,6 @@
     sliderBtn1.classList.remove('active-slider-btn');
     sliderBtn2.classList.remove('active-slider-btn');
     sliderBtn3.classList.add('active-slider-btn');
-
-    feachuresLearnMore1.setAttribute('tabindex', '-1');
-    feachuresLearnMore2.setAttribute('tabindex', '-1');
-    feachuresLearnMore3.setAttribute('tabindex', '0');
   }
 
   function stopSlider() {
